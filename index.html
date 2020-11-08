@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitWell</title>
+    <link rel = "icon" href="img/logo.png" type = "image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---------------------------HEADER----------------------->
+    <div class="header">
+        <div class="logobar">
+            <div class="logobar-left">
+                <a href="javascript:void(0);" class="icon" onclick="navres()"><i class="fa fa-bars" style="width: 25px;"></i></a>
+                <a class="logo" style="font-size: 30px;font-weight:bolder;">F<span class="i">i</span>twell<span>.</span></a>
+                <div class="logobar-right" style="float: right;">
+                    <a href="#"onclick="document.getElementById('reglog').style.display='block'" style="width:auto;">Register <span>/</span> login</a>
+                  </div>
+            </div>
+            <div class="logobar-center" id="mybar">
+                <a href="#health">Health</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contacts</a>
+                <a href="#aboutus">About us</a>
+            </div>
+        <div class="innerheader">
+            <p class="heading">Fitwell <br>Health and Fitness<br> Club</p>
+            <p class="para">we provide best oppertunities and qualified trainers <br> for the best workout for yourself.</p>
+            <p class="para2">Get started now</p>
+        </div>
+    </div>
+    </div>
+    <!--------------------------LOGIN------------------------->
+    <div class="reglog" id="reglog">
+        <div class="reglogin">
+            <div style="text-align: center;margin: 24px 0 12px 0;position: relative;">
+                <span onclick="document.getElementById('reglog').style.display='none'" class="close" title="Close">&times;</span>
+            </div>
+            <form class="logform" name="loginf" onsubmit="return(form0())">
+                <p class="log1">Log-in</p>
+                <input type="text" id="uname" placeholder="Username or email" name="name">
+                <input type="password" id="pass" placeholder="password" name="pass">
+                <input type="submit" value="Log in">
+                <input type="button" class="signbtn" value="Register" onclick="signclk()">
+                <div>
+                    <input type="checkbox" checked="checked" name="remember" style="float: left;"><p style="color: white;">Remember me</p>
+                    <a href="#" style="color: red;float: right;">Forget password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--------------------------SIGNIN------------------------->
+    <div class="reglog" id="signlog">
+        <div class="reglogin">
+            <div style="text-align: center;margin: 24px 0 12px 0;position: relative;">
+                <span onclick="document.getElementById('signlog').style.display='none'" class="close" title="Close">&times;</span>
+            </div>
+            <form class="logform" name="signinf" onsubmit="return(form1())">
+                <p class="log1">Register</p>
+                <input type="text" id="uname" placeholder="Fullname" name="name">
+                <input type="email" id="email" placeholder="Email" name="email">
+                <input type="password" id="pass" placeholder="password" name="passl">
+                <input type="password" id="pass" placeholder="Repeat password" name="passr">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <!---------------------------MAIN------------------------->
+    <div class="main">
+        <div class="health" id="health">
+            <div style="width: 80%;margin-left: auto;margin-right: auto;">
+                <p style="font-size: 3vw;font-weight:bolder;color: white;">Health</p>
+                <p style="font-size: 1.4vw;color: white;">
+                    Health is one of the most important aspects of our life and  <br> there are many ways to ook after your health in our daily lifestyle.</p>
+            </div>
+            <div class="healthin">
+                <div class="healcol">
+                    <ul class="heal">
+                        <li class="topheal" style="background-color: #212432;">Healthy Diet</li>
+                        <li style="font-weight: bolder;" class="midheal"><img src="img/healthydiet.jpg" height="70%" width="70%"></li>
+                        <li style="color:white;">
+                            Healthy diet is the important part of our health management.<br> Thats why we provide proper diet recommendations for weight gain or loss.</li>
+                    </ul>
+                </div>
+                <div class="healcol">
+                    <ul class="heal">
+                        <li class="topheal" style="background-color: #212432;">daily exercise</li>
+                        <li style="font-weight: bolder;" class="midheal"><img src="img/dailyexercise.jpeg" height="70%" width="70%"></li>
+                        <li style="color:white;">
+                        Daily exercise is important for healthy physique. <br> Our professional trainers provide scheduled and managed daily exercise for you.</li>
+                    </ul>
+                </div>
+                <div class="healcol1">
+                    <ul class="heal">
+                        <li class="topheal" style="background-color: #212432;">Yoga</li>
+                        <li style="font-weight: bolder;" class="midheal"><img src="img/yoga.jpg" height="70%" width="70%"></li>
+                        <li style="color:white;">
+                        Our trainers also provide yoga classes. Yoga is a technique originated in ancient india for physical, mental and spiritual practices and disciplines.</li>
+                    </ul>
+                </div>
+                <div class="healcol1">
+                    <ul class="heal">
+                        <li class="topheal" style="background-color: #212432;">Body management</li>
+                        <li style="font-weight: bolder;" class="midheal"><img src="img/healthmanagement.jpg" height="70%" width="70%"></li>
+                        <li style="color:white;">
+                        Using a body tracker like a fitness band and integrated mobile app is also important for the health management in your day to day busy lifestyle.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="services" id="services">
+            <div style="width: 80%;margin-left: auto;margin-right: auto;">
+                <p style="font-size: 3vw;font-weight:bolder;color: white;">Services</p>
+            </div>
+            <div class="inserv">
+                <div class="pricecol">
+                    <ul class="price">
+                        <li class="topprice" style="background-color: #212432;">Group workout</li>
+                        <li style="font-weight: bolder;" class="midprice">$ 7.69 / Year</li>
+                        <li style="color:white;"> group workout</li>
+                        <li style="color:white;"> group trainers and</li>
+                        <li style="color:white;"> equipments for all</li>
+                        <li class="midprice"><a class="button" href="#">Purchase</a></li>
+                    </ul>
+                </div>
+                <div class="pricecol">
+                    <ul class="price">
+                        <li class="topprice" style="background-color: #212432;" >Personal workout</li>
+                        <li style="font-weight: bolder;" class="midprice">$ 12.99 / Year</li>
+                        <li style="color:white;"> personal trainers</li>
+                        <li style="color:white;"> personal space and</li>
+                        <li style="color:white;"> seperate equipments</li>
+                        <li class="midprice"><a class="button" href="#">Purchase</a></li>
+                    </ul>
+                </div>
+                <div class="pricecol">
+                    <ul class="price">
+                        <li class="topprice" style="background-color: #212432;" >6 week transformation</li>
+                        <li style="font-weight: bolder;" class="midprice">$ 70.49 </li>
+                        <li style="color:white;"> best training techniques</li>
+                        <li style="color:white;"> our best trainers and</li>
+                        <li style="color:white;"> high end gears</li>
+                        <li class="midprice"><a class="button" href="#">Purchase</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery" id="gallery">
+            <div class="txt">
+                <p style="font-size: 3vw;font-weight:bolder;color: white;">Our Gallery</p>
+                <p style="font-size: 1.4vw;color: white;">here are some of photos of our happy clients and their before and after shots <br> 
+                    and photos of our work environment </p>
+            </div>
+            <div class="imgs">
+                <img src="img/slide0.jpg" class="inimg" name = "slide">
+            </div>
+        </div>
+        
+        <div class="contact" id="contact">
+            <form class="cont" name="conta" onsubmit="return(form2())">
+                <p style="font-size: 3vw;font-weight:bolder;color: white;">Contact us</p>
+                <input type="text" id="name" placeholder="Name" name="name">
+                <input type="email" id="email" placeholder="Email Address" name="email">
+                <textarea name="message" id="message" placeholder="Write us" cols="30" rows="10"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <!---------------------------FOOTER------------------------>
+    <div class="footer" id="aboutus">
+        <div class="innerfooter">
+            <h2>F<span class="i">i</span>twell<span>.</span></h2>
+            <div class="infoot">
+                <div class="col1">
+                    <p style="font-size: 12px;margin-bottom: 50px;">Fitwell welcomes a range of clients - professional office based workers, teachers, business owners, stay at home mums and more. Whether the goal is to lose a bit of post-baby weight, get in shape for your big wedding day, or improve strength and regain energy, the studio provides it all. <br><br>
+                        By offering a variety of group and personal training services to tackle personal goals, the unique experience works for everyone. <br><br>
+                        We thrives on creating a positive culture for all members, both inside and outside of the gym. The studio is full of like minded people who are on a mission to be the best they can be and influence others around them.</p>
+                </div>
+                <div class="col2">
+                    <p><span class="pi">Subscribe</span> to our newsletter</p>
+                    <form name="newsl" onsubmit="return(form3())">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="submit" value="Subscribe">
+                    </form></div>
+            </div>
+            <hr>
+            <div class="iconc">
+                <div class="iconc1">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube"></i></a>
+                    <a href="https://www.whatsapp.com"><i class="fa fa-whatsapp"></i></a>
+                </div>
+                <div class="iconc2">
+                    <a href="https://www.gmail.com" style="color: white">kumarnikhil9351@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <i class="fa fa-chevron-up"  onclick="topFunction()" id="myBtn" > </i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
